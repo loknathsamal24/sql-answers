@@ -1,0 +1,14 @@
+-- Create the Student table
+CREATE TABLE Student (
+    ID INT PRIMARY KEY NOT NULL,
+    Name VARCHAR(30) NOT NULL,
+    Age INT NOT NULL,
+    Address VARCHAR(50)
+);
+--Insert values into the Table 
+INSERT INTO Student (ID, Name, Age, Address) VALUES
+(1, 'Lokanath', 24, 'Bangalore'),
+(2, 'Tushar', 32, 'Pune'),
+(3, 'Hemanth', 21, 'Hyderabad'),
+(4, 'Ravi', 27, 'Chennai'),
+(5, 'Nick', 20, 'Mumbai');
