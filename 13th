@@ -1,0 +1,3 @@
+SELECT Person.first_name,Person.last_name,Address.city,Address.state
+FROM Person
+JOIN Address a ON p.person_id = a.person_id;
