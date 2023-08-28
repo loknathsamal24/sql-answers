@@ -1,0 +1,7 @@
+SELECT Customer.customer_name,
+COUNT(Order.order_id) AS order_count
+FROM Customers
+JOIN Orders ON Customer.customer_id = Order.customer_id
+GROUP BY Customer.customer_id, Customer.customer_name
+ORDER BY order_count DESC, customer_name ASC
+LIMIT 5;
